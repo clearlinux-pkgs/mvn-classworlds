@@ -4,10 +4,12 @@
 #
 Name     : mvn-classworlds
 Version  : 1.1.alpha.2
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
 Source0  : https://repo1.maven.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
 Source1  : https://repo1.maven.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+Source2  : https://repo1.maven.org/maven2/classworlds/classworlds/1.1/classworlds-1.1.jar
+Source3  : https://repo1.maven.org/maven2/classworlds/classworlds/1.1/classworlds-1.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Plexus
@@ -35,6 +37,12 @@ cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/classworlds/classworlds
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/classworlds/classworlds/1.1-alpha-2
 cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/classworlds/classworlds/1.1-alpha-2
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/classworlds/classworlds/1.1
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/classworlds/classworlds/1.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/classworlds/classworlds/1.1
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/classworlds/classworlds/1.1
+
 
 %files
 %defattr(-,root,root,-)
@@ -43,3 +51,5 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/classworlds/classworlds
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
 /usr/share/java/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+/usr/share/java/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.jar
+/usr/share/java/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.pom
