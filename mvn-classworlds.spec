@@ -4,7 +4,7 @@
 #
 Name     : mvn-classworlds
 Version  : 1.1.alpha.2
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
 Source0  : https://repo1.maven.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
 Source1  : https://repo1.maven.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
